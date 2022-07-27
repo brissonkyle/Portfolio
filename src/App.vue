@@ -1,32 +1,52 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-img max-height="100vh" alt="background image" src="@/assets/bgPoster.png">
+    <v-main>
+      <router-view/>
+    </v-main>
+    </v-img>
+    <v-app-bar
+      app
+      class="index"
+      dark
+      height="50px"
+    >
+    <a href="https://github.com/brissonkyle" class="white--text"><h4 class="ml-16"><strong>KYLE</strong> BRISSON</h4></a>
+      <v-spacer></v-spacer>
+      <a class="ma-4 white--text" href="https://github.com/brissonkyle">GitHub</a>
+    </v-app-bar>
+    <AboutPage/>
+    <ProjectPage/>
+    <ContactPage/>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import AboutPage from './components/AboutPage.vue';
+import ProjectPage from './components/ProjectPage.vue';
+import ContactPage from './components/ContactPage.vue';
 
-nav {
-  padding: 30px;
-}
+export default {
+  components: { 
+    AboutPage,
+    ProjectPage,
+    ContactPage 
+  },
+  name: 'App',
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  data: () => ({
+    
+  }),
 
-nav a.router-link-exact-active {
-  color: #42b983;
+  methods: {
+    
+  },
+};
+</script>
+
+
+<style scoped>
+a {
+  text-decoration: none;
 }
 </style>
