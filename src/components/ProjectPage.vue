@@ -4,7 +4,7 @@
             <v-col cols="12">
                 <h1 class="white--text"><strong>My Projects</strong></h1>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="4" sm="12" md="12" lg="4">
                 <v-card height="225px"  dark>
                     <v-card-title class="justify-center"><strong>Pizza Website</strong></v-card-title>
                     <v-card-text class="white--text">
@@ -15,7 +15,7 @@
                     </v-btn>
                 </v-card>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="4" sm="12" md="12" lg="4">
                 <v-card height="225px"  dark>
                     <v-card-title class="justify-center"><strong>Foodie Project</strong></v-card-title>
                     <v-card-text class="white--text">
@@ -26,7 +26,7 @@
                     </v-btn>
                 </v-card>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="4" sm="12" md="12" lg="4">
                 <v-card height="225px" dark>
                     <v-card-title class="justify-center"><strong>MVP Stats</strong></v-card-title>
                     <v-card-text class="white--text">
@@ -45,13 +45,13 @@
                         Some Development Skills
                     </v-card-title>
                     <v-row>
-                        <v-col cols="6">
+                        <v-col cols="6" sm="12" md="12" lg="6">
                             <p>1. HTML</p>
                             <p>2. CSS</p>
                             <p>3. Javascript</p>
                             <p>4. Vue</p>
                         </v-col>
-                        <v-col cols="6">
+                        <v-col cols="6" sm="12" md="12" lg="6">
                             <p>5. Vuetify</p>
                             <p>6. Python</p>
                             <p>7. Flask</p>
